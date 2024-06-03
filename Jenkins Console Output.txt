@@ -1,0 +1,34 @@
+Started by user jenkins
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/pull-request
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/pull-request/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/prakashk0301/Ant-WebProject # timeout=10
+Fetching upstream changes from https://github.com/prakashk0301/Ant-WebProject
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+ > git fetch --tags --force --progress -- https://github.com/prakashk0301/Ant-WebProject +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 4cc0ef15efbcc2d80913354a1a1c530346cca7ca (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4cc0ef15efbcc2d80913354a1a1c530346cca7ca # timeout=10
+Commit message: "Update feb_jenkinsfile"
+First time build. Skipping changelog.
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse 4cc0ef15efbcc2d80913354a1a1c530346cca7ca^{commit} # timeout=10
+The recommended git tool is: NONE
+No credentials specified
+[GitCheckoutListener] Recording commits of 'git https://github.com/prakashk0301/Ant-WebProject'
+[GitCheckoutListener] Found no previous build with recorded Git commits
+[GitCheckoutListener] -> Starting initial recording of commits
+[GitCheckoutListener] -> Single parent commit found - branch is already descendant of target branch head
+[GitCheckoutListener] -> Using head commit '4cc0ef1' as starting point
+[GitCheckoutListener] -> Recorded 34 new commits
+[GitCheckoutListener] -> Git commit decorator successfully obtained 'hudson.plugins.git.browser.GithubWeb@5124705' to render commit links
+[pull-request] $ /bin/sh -xe /tmp/jenkins14211898049929535389.sh
++ echo 'Pull request successfull'
+Pull request successfull
+Finished: SUCCESS
